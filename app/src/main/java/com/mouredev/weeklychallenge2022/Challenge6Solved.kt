@@ -20,10 +20,10 @@ package com.mouredev.weeklychallenge2022
 
 
 fun main() {
-    println(reverse("Hola mundo"))
+    println(reverseWord("Hola mundo"))
 }
 
-fun reverse(word: String): String {
+fun reverseWord(word: String): String {
     val wordAsArray: Array<String> = word.toCharArray().map { it.toString() }.toTypedArray()
     val wordLength: Int = word.length
     val reverseWordsArray = arrayOfNulls<String>(wordLength)
